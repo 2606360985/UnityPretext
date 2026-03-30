@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "com.concode.pretext": {
-      "version": "file:/Users/dev/Documents/concode/etc/UnityPretext",
+      "version": "file:../../",
       "depth": 0,
       "source": "local",
       "dependencies": {
