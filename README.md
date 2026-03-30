@@ -191,6 +191,8 @@ The package includes an **Editorial Engine** sample — a two-column editorial l
 
 To import: **Package Manager → UnityPretext → Samples → Import**.
 
+**Live demo:** [Play in browser](https://play.unity.com/en/games/42c8e3f0-e136-48df-894b-b901d4cf5aad/web)
+
 ## Credits
 
 Ported from [@chenglou/pretext](https://github.com/chenglou/pretext). Original architecture by Cheng Lou, with the initial seed from Sebastian Markbage's [text-layout](https://github.com/chenglou/text-layout).
