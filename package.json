@@ -1,0 +1,28 @@
+{
+  "name": "com.concode.pretext",
+  "version": "0.1.0",
+  "displayName": "UnityPretext",
+  "description": "Lightweight text layout engine for Unity. Provides grapheme clustering, glyph measurement, segment classification, and line-breaking with CJK/Kinsoku support.",
+  "unity": "6000.0",
+  "dependencies": {
+    "com.unity.textmeshpro": "3.0.0"
+  },
+  "keywords": [
+    "text",
+    "layout",
+    "line-breaking",
+    "CJK",
+    "kinsoku",
+    "grapheme"
+  ],
+  "author": {
+    "name": "mjshin82"
+  },
+  "samples": [
+    {
+      "displayName": "Editorial Engine",
+      "description": "Two-column text reflow demo with floating orb obstacles.",
+      "path": "Samples~/EditorialEngine"
+    }
+  ]
+}
