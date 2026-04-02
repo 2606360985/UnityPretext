@@ -1,0 +1,651 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 10
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 13
+  m_BakeOnSceneLoad: 0
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 2
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 512
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 256
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 1
+    m_PVRDenoiserTypeDirect: 1
+    m_PVRDenoiserTypeIndirect: 1
+    m_PVRDenoiserTypeAO: 1
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 1
+    m_PVRFilteringGaussRadiusAO: 1
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 20201, guid: 0000000000000000f000000000000000, type: 0}
+  m_LightingSettings: {fileID: 0}
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 3
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    buildHeightMesh: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &159770946
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 159770947}
+  m_Layer: 0
+  m_Name: Container
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &159770947
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159770946}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1754183741}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &617859275
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 617859277}
+  - component: {fileID: 617859276}
+  - component: {fileID: 617859278}
+  m_Layer: 0
+  m_Name: Directional Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &617859276
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617859275}
+  m_Enabled: 1
+  serializedVersion: 13
+  m_Type: 1
+  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize2D: {x: 0.5, y: 0.5}
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ForceVisible: 0
+  m_ShapeRadius: 0.025
+  m_ShadowAngle: 0
+  m_LightUnit: 1
+  m_LuxAtDistance: 1
+  m_EnableSpotReflector: 1
+--- !u!4 &617859277
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617859275}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &617859278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617859275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_CustomShadowLayers: 0
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
+  m_RenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ShadowRenderingLayersMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_Version: 4
+  m_LightLayerMask: 1
+  m_ShadowLayerMask: 1
+  m_RenderingLayers: 1
+  m_ShadowRenderingLayers: 1
+--- !u!1 &718765248
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 718765252}
+  - component: {fileID: 718765251}
+  - component: {fileID: 718765250}
+  - component: {fileID: 718765249}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &718765249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718765248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalCameraData
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_VolumeFrameworkUpdateModeOption: 2
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_AllowHDROutput: 1
+  m_UseScreenCoordOverride: 0
+  m_ScreenSizeOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_ScreenCoordScaleBias: {x: 0, y: 0, z: 0, w: 0}
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_TaaSettings:
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
+  m_Version: 2
+--- !u!81 &718765250
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718765248}
+  m_Enabled: 1
+--- !u!20 &718765251
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718765248}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.08, g: 0.08, b: 0.12, a: 1}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &718765252
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718765248}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1754183736
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1754183741}
+  - component: {fileID: 1754183740}
+  - component: {fileID: 1754183739}
+  - component: {fileID: 1754183738}
+  - component: {fileID: 1754183742}
+  - component: {fileID: 1754183737}
+  m_Layer: 0
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1754183737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754183736}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a61e908afcbb4f77974bb49ea8b9e11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ThirdParty::EditorialEngineSample
+  fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  fontSize: 20
+  lineHeight: 30
+  gutter: 40
+  columnGap: 30
+  padding: 30
+  orbCount: 4
+  orbRadius: 60
+  orbSpeedMin: 50
+  orbSpeedMax: 110
+  orbPadding: 12
+  orbSprite: {fileID: 21300000, guid: 3760cfc4b2cd544d8a5c84949cb36326, type: 3}
+  container: {fileID: 159770947}
+  sampleText: "\u4E3A\u4EC0\u4E48\u662FClaude CodeWhyClaudeCodeAI\u7F16\u7A0B\u5DE5\u5177\u5728\u4E09\u5E74\u91CC\u53D8\u4E86\u4E09\u6B21\u3002\u641E\u6E05\u695A\u8FD9\u4E2A\u6F14\u53D8\u8DEF\u5F84\uFF0C\u4F60\u5C31\u80FD\u7406\u89E3Claude
+    Code\u5230\u5E95\u5728\u505A\u4E00\u4EF6\u4EC0\u4E48\u4E0D\u4E00\u6837\u7684\u4E8B\u3002\u4E09\u5E74\u53D8\u4E86\u4E09\u6B212022\u5E74\uFF0CGitHub
+    Copilot\u51FA\u6765\u4E86\u3002\u4F60\u5199\u4E0A\u534A\u53E5\uFF0C\u5B83\u5E2E\u4F60\u731C\u4E0B\u534A\u53E5\u3002\u50CF\u4E00\u4E2A\u5750\u5728\u65C1\u8FB9\u7684\u5B9E\u4E60\u751F\uFF0C\u6253\u5B57\u786E\u5B9E\u5FEB\u4E86\uFF0C\u4F46\u672C\u8D28\u6CA1\u53D8\uFF1A\u4F60\u8FD8\u662F\u90A3\u4E2A\u5199\u4EE3\u7801\u7684\u4EBA\u30022023\u52302024\u5E74\uFF0CCursor\u706B\u4E86\u3002\u4F60\u53EF\u4EE5\u7528\u81EA\u7136\u8BED\u8A00\u8BA9\u7F16\u8F91\u5668\u5E2E\u4F60\u6539\u51FD\u6570\u3001\u91CD\u6784\u6A21\u5757\uFF0C\u4E0D\u7528\u7CBE\u786E\u63CF\u8FF0\u300C\u600E\u4E48\u5199\u300D\uFF0C\u8BF4\u300C\u6211\u60F3\u8981\u4EC0\u4E48\u6548\u679C\u300D\u5C31\u884C\u3002\u540E\u6765Cursor\u4E5F\u52A0\u4E86Agent\u6A21\u5F0F\uFF0C\u80FD\u8DE8\u6587\u4EF6\u64CD\u4F5C\u3001\u81EA\u52A8\u8DD1\u547D\u4EE4\u3002\u4F46\u5B83\u59CB\u7EC8\u957F\u5728IDE\u91CC\uFF0C\u662F\u7F16\u8F91\u5668\u7684\u5EF6\u4F38\u30022025\u5E74\uFF0CClaude
+    Code\u51FA\u6765\u4E86\u3002\u5B83\u4E0D\u4F4F\u5728\u4EFB\u4F55\u7F16\u8F91\u5668\u91CC\uFF0C\u76F4\u63A5\u5728\u7EC8\u7AEF\u8FD0\u884C\u3002\u4F60\u63CF\u8FF0\u4E00\u4E2A\u9700\u6C42\uFF0C\u5B83\u81EA\u5DF1\u89C4\u5212\u6B65\u9AA4\u3001\u8BFB\u4EE3\u7801\u3001\u5199\u4EE3\u7801\u3001\u8DD1\u6D4B\u8BD5\u3001\u64CD\u4F5Cgit\uFF0C\u6574\u4E2A\u5FAA\u73AF\u81EA\u52A8\u5B8C\u6210\u3002\u4F60\u7684\u89D2\u8272\u4ECE\u300C\u5199\u4EE3\u7801\u7684\u4EBA\u300D\u53D8\u6210\u4E86\u300C\u7ED9\u6307\u4EE4\u7684\u4EBA\u300D\u3002Copilot
+    \u8865\u5168\u2192Cursor \u5BF9\u8BDD\u2192Claude Code \u7EC8\u7AEFAgent\u4E09\u6B65\u8D70\u4E0B\u6765\uFF0C\u53D8\u7684\u4E0D\u662F\u6280\u672F\u6709\u591A\u5148\u8FDB\uFF0C\u800C\u662F\u4F60\u548CAI\u4E4B\u95F4\u7684\u5173\u7CFB\u3002Copilot\u662F\u4F60\u7684\u8F93\u5165\u6CD5\uFF0CCursor\u662F\u4F60\u7684\u7ED3\u5BF9\u4F19\u4F34\uFF0CClaude
+    Code\u662F\u4F60\u7684\u72EC\u7ACB\u5DE5\u7A0B\u5E08\u56E2\u961F\u3002\u5B83\u8DDFCursor\u5230\u5E95\u6709\u4EC0\u4E48\u4E0D\u4E00\u6837\u8FD9\u662F\u88AB\u95EE\u5F97\u6700\u591A\u7684\u95EE\u9898\uFF1A\u300CCursor\u4E5F\u6709Agent\u6A21\u5F0F\u4E86\uFF0C\u4E0D\u90FD\u662FAI\u5E2E\u6211\u5199\u4EE3\u7801\u5417\uFF1F\u300D\u786E\u5B9E\uFF0C2024\u5E74\u4E4B\u540E\u7684Cursor\u5DF2\u7ECF\u5F88\u5F3A\u4E86\uFF0C\u80FD\u8DE8\u6587\u4EF6\u64CD\u4F5C\u3001\u7406\u89E3\u6574\u4E2A\u9879\u76EE\u3001\u81EA\u52A8\u6267\u884C\u547D\u4EE4\u3002\u4E24\u8005\u7684\u5DEE\u5F02\u4E0D\u5728\u300C\u80FD\u4E0D\u80FD\u505A\u300D\uFF0C\u800C\u5728\u505A\u5230\u4EC0\u4E48\u7A0B\u5EA6\u3002\r\n\u7EF4\u5EA6IDE
+    Agent\uFF08Cursor\u7B49\uFF09\u7EC8\u7AEFAgent\uFF08Claude Code\uFF09\u8FD0\u884C\u73AF\u5883\u7F16\u8F91\u5668\u5185\u5D4C\uFF0C\u4F9D\u8D56IDE\u6846\u67B6\u7EC8\u7AEF\u539F\u751F\uFF0C\u76F4\u63A5\u64CD\u4F5C\u64CD\u4F5C\u7CFB\u7EDF\u81EA\u4E3B\u7A0B\u5EA6\u901A\u5E38\u9700\u8981\u4F60\u5728\u65C1\u8FB9\u786E\u8BA4\u53EF\u4EE5\u5B8C\u5168\u65E0\u4EBA\u503C\u5B88\u8FD0\u884C\u7CFB\u7EDF\u96C6\u6210\u901A\u8FC7\u63D2\u4EF6\u6865\u63A5git/CLI\u76F4\u63A5\u64CD\u4F5Cgit\u3001shell\u3001MCP\u8BB0\u5FC6\u7CFB\u7EDF\u9690\u5F0F\u7684\u9879\u76EE\u7D22\u5F15\u663E\u5F0F\u7684CLAUDE.md\u8BB0\u5FC6\u6587\u4EF6\u5E76\u884C\u80FD\u529B\u4E3B\u8981\u5355\u5B9E\u4F8B\u5DE5\u4F5C\u539F\u751F\u652F\u6301\u591A\u5B9E\u4F8B\u5E76\u884C\u91CD\u70B9\u770B\u6700\u540E\u4E24\u884C\u3002CLAUDE.md\u8BA9\u4F60\u628A\u9879\u76EE\u77E5\u8BC6\u3001\u7F16\u7801\u89C4\u8303\u3001\u67B6\u6784\u51B3\u7B56\u5199\u6210\u6587\u4EF6\uFF0CClaude
+    Code\u6BCF\u6B21\u542F\u52A8\u90FD\u4F1A\u8BFB\uFF0C\u76F8\u5F53\u4E8E\u7ED9AI\u4E00\u4E2A\u6301\u4E45\u7684\u9879\u76EE\u8BB0\u5FC6\u3002\u591A\u5B9E\u4F8B\u5E76\u884C\u610F\u5473\u7740\u4F60\u53EF\u4EE5\u540C\u65F6\u8BA9\u51E0\u4E2AClaude
+    Code\u5404\u81EA\u5904\u7406\u4E0D\u540C\u6A21\u5757\uFF0C\u50CF\u4E00\u4E2A\u5C0F\u56E2\u961F\u3002\u6253\u4E2A\u6BD4\u65B9\uFF1ACursor\u50CF\u5750\u5728\u4F60IDE\u91CC\u7684\u7ED3\u5BF9\u4F19\u4F34\uFF0C\u4F60\u4EEC\u770B\u7740\u540C\u4E00\u4E2A\u5C4F\u5E55\u534F\u4F5C\uFF1BClaude
+    Code\u66F4\u50CF\u4E00\u4E2A\u72EC\u7ACB\u5E72\u6D3B\u7684\u5DE5\u7A0B\u5E08\uFF0C\u4F60\u544A\u8BC9\u4ED6\u9700\u6C42\uFF0C\u4ED6\u81EA\u5DF1\u62C9\u4EE3\u7801\u3001\u5199\u4EE3\u7801\u3001\u8DD1\u6D4B\u8BD5\u3001\u63D0\u4EA4\uFF0C\u4F60\u53BB\u559D\u676F\u5496\u5561\u56DE\u6765\u770B\u7ED3\u679C\u5C31\u597D\u3002Boris
+    Cherny\uFF0CClaude Code\u7684\u521B\u5EFA\u8005\uFF0C\u8BF4\u81EA\u5DF1\u7528Opus
+    4.5\u4E4B\u540E\u5C31\u518D\u4E5F\u6CA1\u6709\u624B\u5199\u8FC7\u4E00\u884C\u4EE3\u7801\u300247\u5929\u91CC\u670946\u5929\u90FD\u5728\u7528\uFF0C\u6700\u957F\u5355\u6B21session\u8DD1\u4E861\u592918\u5C0F\u65F650\u5206\u949F\u3002\u8FD9\u4E0D\u662F\u8425\u9500\u8BDD\u672F\uFF0C\u662F\u4E00\u4E2A\u6B63\u5728\u5927\u89C4\u6A21\u53D1\u751F\u7684\u73B0\u5B9E\u3002\u82B1\u53D4\u7684\u7ECF\u9A8C\uFF1A\u6211\u672C\u4EBA\u4ECE\u672A\u624B\u5199\u8FC7\u4EE3\u7801\uFF0C\u6240\u6709\u4EA7\u54C1\uFF08\u5305\u62ECAppStore\u4ED8\u8D39\u699CTop
+    1\u7684\u5C0F\u732B\u8865\u5149\u706F\uFF09\u90FD\u662F\u7528AI\u5B8C\u6210\u7684\u3002Claude
+    Code\u8BA9\u300C\u4E0D\u4F1A\u5199\u4EE3\u7801\u4F46\u80FD\u6784\u5EFA\u4EA7\u54C1\u300D\u8FD9\u4EF6\u4E8B\uFF0C\u4ECE\u5C11\u6570\u4EBA\u7684\u5B9E\u9A8C\u53D8\u6210\u4E86\u5927\u591A\u6570\u4EBA\u7684\u53EF\u80FD\u3002\u5B83\u5176\u5B9E\u4E0D\u662F\u5728\u5E2E\u4F60\u5199\u4EE3\u7801\u8FD9\u53E5\u8BDD\u542C\u8D77\u6765\u6709\u70B9\u5947\u602A\uFF0C\u4F46\u786E\u5B9E\u662F\u6211\u7528\u4E86\u534A\u5E74\u4E4B\u540E\u6700\u5927\u7684\u611F\u53D7\uFF1AClaude
+    Code\u4E0D\u662F\u5728\u5E2E\u4F60\u5199\u4EE3\u7801\uFF0C\u5B83\u5728\u5E2E\u4F60\u6784\u5EFA\u4EA7\u54C1\u3002\u4F20\u7EDF\u7684AI\u7F16\u7A0B\u5DE5\u5177\u89E3\u51B3\u7684\u662F\u4EE3\u7801\u751F\u4EA7\u6548\u7387\uFF1A\u600E\u4E48\u66F4\u5FEB\u5730\u5199\u51FA\u8FD9\u4E2A\u51FD\u6570\u3001\u8FD9\u4E2A\u7EC4\u4EF6\u3002Claude
+    Code\u89E3\u51B3\u7684\u662F\u4EA7\u54C1\u6784\u5EFA\u6548\u7387\uFF1A\u600E\u4E48\u66F4\u5FEB\u5730\u4ECE\u4E00\u4E2A\u60F3\u6CD5\u53D8\u6210\u4E00\u4E2A\u80FD\u8DD1\u7684\u4E1C\u897F\u3002\u4E24\u79CD\u573A\u666F\u5BF9\u6BD4\u4E00\u4E0B\uFF1A\u63A8\u8350\u7528Claude
+    Code\uFF1A\u300C\u5E2E\u6211\u505A\u4E00\u4E2A\u652F\u6301Markdown\u7684\u535A\u5BA2\u7CFB\u7EDF\uFF0C\u7528Next.js\uFF0C\u90E8\u7F72\u5230Vercel\uFF0C\u652F\u6301\u6697\u8272\u6A21\u5F0F\u548CRSS\u3002\u300D\u5B83\u4F1A\uFF1A\u5206\u6790\u9700\u6C42\u2192\u9009\u6280\u672F\u65B9\u6848\u2192\u521B\u5EFA\u9879\u76EE\u2192\u9010\u6B65\u5B9E\u73B0\u2192\u8DD1\u6D4B\u8BD5\u2192\u4FEEbug
+    \u2192\u5B8C\u6210\u3002\u5168\u7A0B\u4F60\u53EA\u9700\u8981\u786E\u8BA4\u548C\u8C03\u6574\u65B9\u5411\u3002\u4E0D\u63A8\u8350\u7528IDE\u5185\u7684Agent\uFF1A\u4F53\u9A8C\u4E5F\u4E0D\u5DEE\uFF0C\u4F46\u4F60\u5927\u6982\u7387\u9700\u8981\uFF1A\u76EF\u7740IDE\u770B\u5B83\u6539\u4E86\u4EC0\u4E48\u2192\u51FA\u4E86\u95EE\u9898\u624B\u52A8\u5207\u56DE\u6765\u2192\u5B83\u4E0D\u592A\u6562\u81EA\u5DF1\u8DD1\u547D\u4EE4\u9700\u8981\u4F60\u786E\u8BA4\u2192\u4F60\u59CB\u7EC8\u662F\u5750\u5728\u65C1\u8FB9\u7684\u4EBA\u3002\u5168\u7A0B\u4F60\u662F\u76D1\u5DE5\u3002\r\n\u524D\u8005\u4F60\u5728\u505A\u4EA7\u54C1\u51B3\u7B56\uFF0C\u540E\u8005\u4F60\u5728\u505A\u8FC7\u7A0B\u76D1\u7763\u3002\u968F\u7740AI\u80FD\u529B\u6301\u7EED\u63D0\u5347\uFF0C\u300C\u76EF\u7740AI\u5E72\u6D3B\u300D\u4F1A\u8D8A\u6765\u8D8A\u4E0D\u503C\u94B1\uFF0C\u4EA7\u54C1\u51B3\u7B56\u80FD\u529B\u4F1A\u8D8A\u6765\u8D8A\u503C\u94B1\u3002Claude
+    Code\u589E\u957F\u5FEB\uFF0C\u672C\u8D28\u4E0A\u662F\u547D\u4E2D\u4E86\u4E00\u4E2A\u771F\u5B9E\u9700\u6C42\uFF1A\u5927\u91CF\u806A\u660E\u4EBA\u60F3\u505A\u51FA\u4E1C\u897F\u6765\uFF0C\u7F3A\u7684\u4E0D\u662F\u60F3\u6CD5\uFF0C\u662F\u628A\u60F3\u6CD5\u53D8\u6210\u4EA7\u54C1\u7684\u80FD\u529B\u3002\u8FD9\u672C\u4E66\u5199\u7ED9\u8C01\u5DE5\u7A0B\u5E08\uFF0C\u60F3\u63D0\u9AD810\u500D\u6548\u7387\u3002\u4F60\u5DF2\u7ECF\u4F1A\u5199\u4EE3\u7801\uFF0C\u4F46\u6BCF\u5929\u5927\u91CF\u65F6\u95F4\u82B1\u5728\u6837\u677F\u4EE3\u7801\u3001\u8C03\u8BD5\u3001\u5199\u6D4B\u8BD5\u3001\u5904\u7406CI/CD\u4E0A\u3002Claude
+    Code\u80FD\u63A5\u7BA1\u8FD9\u4E9B\uFF0C\u8BA9\u4F60\u628A\u7CBE\u529B\u653E\u5728\u67B6\u6784\u51B3\u7B56\u548C\u4EA7\u54C1\u601D\u8003\u4E0A\u3002\u4EA7\u54C1\u7ECF\u7406\uFF0C\u60F3\u81EA\u5DF1\u505AMVP\u3002\u4F60\u6709\u4EA7\u54C1\u76F4\u89C9\u548C\u7528\u6237\u6D1E\u5BDF\uFF0C\u4F46\u53D7\u9650\u4E8E\u5F00\u53D1\u8D44\u6E90\u3002Claude
+    Code\u8BA9\u4F60\u4E00\u4E2A\u5468\u672B\u505A\u51FA\u4E00\u4E2A\u80FD\u8DD1\u7684\u539F\u578B\uFF0C\u4E0D\u7528\u7B49\u6392\u671F\uFF0C\u4E0D\u7528\u5199PRD\u7B49\u5F00\u53D1\u7406\u89E3\u3002\u521B\u4E1A\u8005\uFF0C\u60F3\u5B9E\u73B0\u4E00\u4EBA\u516C\u53F8\u3002\u4F60\u60F3\u9A8C\u8BC1\u5546\u4E1A\u60F3\u6CD5\uFF0C\u4F46\u4E0D\u60F3\u5728\u6280\u672F\u4E0A\u82B1\u592A\u591A\u94B1\u548C\u65F6\u95F4\u3002Claude
+    Code\u8BA9\u4E00\u4E2A\u4EBA\u62E5\u6709\u4E00\u4E2A\u5C0F\u56E2\u961F\u7684\u5F00\u53D1\u80FD\u529B\uFF0C\u7F51\u7AD9\u3001App\u3001\u540E\u7AEFAPI\uFF0C\u90FD\u53EF\u4EE5\u4E00\u4E2A\u4EBA\u641E\u5B9A\u3002\u6838\u5FC3\u5EFA\u8BAE\u4E0D\u7BA1\u4F60\u5C5E\u4E8E\u54EA\u4E00\u7C7B\uFF0C\u8FD9\u672C\u4E66\u5047\u8BBE\u4F60\u806A\u660E\uFF0C\u4F46\u53EF\u80FD\u4ECE\u6CA1\u7528\u8FC7AI\u7F16\u7A0B\u5DE5\u5177\u3002\u6211\u4EEC\u4ECE\u96F6\u5F00\u59CB\uFF0C\u4F46\u4E0D\u4F1A\u5728\u57FA\u7840\u6982\u5FF5\u4E0A\u78E8\u53FD\u592A\u4E45\u3002\u589E\u957F\u6709\u591A\u5FEB\u8BF4\u51E0\u4E2A\u6570\u5B57\u3002Claude
+    Code\u57282025\u5E742\u6708\u516C\u5F00\u53D1\u5E03\uFF08\u7814\u7A76\u9884\u89C8\u7248\uFF09\uFF0C5\u6708\u6B63\u5F0FGA\u3002GA\u540E\u4EC56\u4E2A\u6708\uFF0C\u8FBE\u523010\u4EBF\u7F8E\u5143\u5E74\u5316\u6536\u5165\u3002\u8FD9\u4E2A\u901F\u5EA6\u5728SaaS\u5386\u53F2\u4E0A\u6781\u5176\u7F55\u89C1\u3002\u4F01\u4E1A\u7AEF\u91C7\u7528\u4E5F\u5F88\u5FEB\u3002Netflix\u3001Spotify\u3001DoorDash\u3001Notion\u3001Vercel\u90FD\u5728\u5185\u90E8\u5927\u89C4\u6A21\u4F7F\u7528\u3002Anthropic\u7684\u6570\u636E\u663E\u793A\uFF0C\u4F7F\u7528Claude
+    Code\u7684\u56E2\u961F\u5E73\u5747\u63D0\u65482-5\u500D\u3002\u5F53\u524DClaude
+    Code\u80CC\u540E\u7684\u6A21\u578B\u6709\u4E09\u4E2A\uFF1AOpus 4.6 \u2014 \u63A8\u7406\u80FD\u529B\u6700\u5F3A\uFF0C\u5904\u7406\u590D\u6742\u4EFB\u52A1\u548C\u67B6\u6784\u51B3\u7B56Sonnet
+    4.6 \u2014 \u6027\u4EF7\u6BD4\u6700\u4F18\uFF0C\u65E5\u5E38\u7F16\u7801\u7684\u4E3B\u529BHaiku
+    4.5 \u2014 \u54CD\u5E94\u6700\u5FEB\uFF0C\u9002\u5408\u7B80\u5355\u67E5\u8BE2\u548C\u8865\u5168\u8FD9\u4E9B\u6570\u5B57\u80CC\u540E\u7684\u4FE1\u53F7\u5176\u5B9E\u5C31\u4E00\u4E2A\uFF1AAgent\u5F0F\u7F16\u7A0B\u4E0D\u518D\u662F\u6781\u5BA2\u7684\u73A9\u5177\uFF0C\u6B63\u5728\u53D8\u6210\u8F6F\u4EF6\u5F00\u53D1\u7684\u6807\u51C6\u65B9\u5F0F\u3002\u5168\u4E66\u8DEF\u7EBF\u56FE\u5168\u4E66\u6309\u4E00\u6761\u4E3B\u7EBF\u8D70\uFF1A\u4E00\u4E2A\u806A\u660E\u4EBA\u600E\u4E48\u5728\u4E00\u5468\u5185\u4ECE\u96F6\u7528AI\u6784\u5EFA\u4EA7\u54C1"
+--- !u!114 &1754183738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754183736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.GraphicRaycaster
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1754183739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754183736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 1280, y: 720}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &1754183740
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754183736}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 1
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_UseReflectionProbes: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &1754183741
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754183736}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 159770947}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &1754183742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754183736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b2c3d4e5f678901234567890123456, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NeonMagazineSample
+  fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  fontSize: 18
+  lineHeight: 28
+  gutter: 40
+  columnGap: 24
+  padding: 30
+  cardCount: 5
+  cardMinSize: 80
+  cardMaxSize: 140
+  cardDriftSpeed: 18
+  cardPadding: 10
+  cardPrefabs:
+  - {fileID: 6255534677349398391, guid: 86c35c8debbc51143b384356180866b6, type: 3}
+  - {fileID: 2426608677781997008, guid: e1d86dc45051ff848a25a072c036a9f4, type: 3}
+  - {fileID: 3494356471863255079, guid: eab800fb18a6fd149b58948eddce537b, type: 3}
+  collisionMesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  cardRotateSpeed: 30
+  modelDepthOffset: -1
+  neonCyan: {r: 0.627451, g: 0.1254902, b: 0.9411765, a: 1}
+  neonMagenta: {r: 1, g: 0.2705882, b: 0, a: 1}
+  neonYellow: {r: 1, g: 1, b: 0, a: 0.9}
+  neonGreen: {r: 0, g: 1, b: 0.5, a: 0.9}
+  showPerfPanel: 1
+  container: {fileID: 0}
+  titleRect: {fileID: 0}
+  perfText: {fileID: 0}
+  uiCamera: {fileID: 718765251}
+  sampleText: "NEON TEXT RENDERING// In the year 2049, text is no longer static glyphs
+    arranged on a page. It flows like liquid light through the circuits of quantum
+    displays, adapting to every surface, every obstacle, every constraint. The ancient
+    rendering pipelines\u2014designed for paper and ink\u2014are obsolete. What replaced
+    them measures text in microseconds, reshapes it in real-time, flows it around
+    images and advertisements without breaking stride. This is Pretext: a text measurement
+    engine built for the post-screen era.\n\nUnlike traditional approaches that measure
+    by rendering, Pretext prepares text as mathematical segments. Each grapheme\u2014every
+    character or grapheme cluster\u2014gets pre-calculated with its width, break
+    properties, and segment classification. Japanese Kinsoku rules are baked in.
+    CJK line-breaking intelligence comes standard. The result: layout calculations
+    that run in 0.05 milliseconds instead of 30.\n\nBut raw speed is just the beginning.
+    When text measures without rendering, it becomes a fluid material. It can flow
+    around images like water around stones. It can compress and expand as containers
+    resize. It can dance around floating cards in a magazine layout, reflowing as
+    those cards drift and collide. Traditional text rendering locks you into a single
+    layout pass. Pretext unlocks dynamic composition.\n\nConsider the humble message
+    bubble. In legacy systems, calculating the height of 500 message bubbles requires
+    500 synchronous layout passes. The main thread freezes. Jank appears. Users complain.
+    Pretext prepares once, then measures any substring in constant time. 500 bubbles?
+    500,000 bubbles? The cost is the same: microseconds.\n\nThe technical secret
+    is deconstruction. Instead of one expensive operation (render to measure), Pretext
+    separates concerns: preparation happens once, measurement happens infinitely.
+    Segment classification handles Kinsoku and CJK rules. Glyph measurement uses
+    font metrics directly. Layout engines consume pre-measured segments like a CNC
+    machine reading a cut list.\n\nThis is the cyberpunk future of text: measured,
+    classified, and ready to flow. No reflows. No thrashing. No compromises. Just
+    pure, efficient, beautiful typography that bends around reality."
+--- !u!1660057539 &9223372036854775807
+SceneRoots:
+  m_ObjectHideFlags: 0
+  m_Roots:
+  - {fileID: 718765252}
+  - {fileID: 617859277}
+  - {fileID: 1754183741}

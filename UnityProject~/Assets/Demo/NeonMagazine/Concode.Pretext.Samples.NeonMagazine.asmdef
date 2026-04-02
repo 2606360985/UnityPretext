@@ -1,0 +1,17 @@
+{
+  "name": "Concode.Pretext.Samples.NeonMagazine",
+  "rootNamespace": "",
+  "references": [
+    "Concode.Pretext.Runtime",
+    "Unity.TextMeshPro"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
